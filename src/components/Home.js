@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import isvg from './accelerate-svgrepo-com.svg'
+import ReactStars from 'react-stars'
 
 export const Home = () => {
   const[data , setData]=useState(1)
   return (
     <div className='mx-auto'>
-      <div className=' flex justify-center items-center flex-col m-20 relative'>
+      <div className=' flex justify-center items-center flex-col m-20'>
         {
           data===1 ? <>
           <h1 className='font-bold text-3xl '>Which are you most intresting in?</h1>
@@ -113,7 +114,20 @@ export const Home = () => {
             </div>
           </div>
           
-          </> :<></>
+          </> : data===5 ? <>
+          <div className='flex items-center justify-between gap-10 px-2 d mt-10'>
+            <img src={isvg} alt='ajdsdjs' width={350} height={350}></img>
+            <div className='w-2/4'>
+            <h1 className='font-bold text-2xl'>You're on your way!</h1>
+            <ReactStars className='mt-5 font-bold ml-2' value={5} edit={false}/>
+            <p className='mt-5 opacity-80'>
+            "Through its engaging and well-structured courses, Brilliant has taught me mathematical concepts that I previously struggled to understand. I now feel confident approaching both technical job interviews and real world problem solving situations."
+            </p>
+            <p className='mt-7'>- Jacob S.</p>
+            </div>
+          </div>
+          </>
+          : <></>
         }
     
         <button onClick={(()=>{setData(data+1)})} className='px-10 bg-black p-2 text-white rounded-xl mt-6'>Continue</button>
