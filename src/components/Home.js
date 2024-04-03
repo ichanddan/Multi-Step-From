@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import isvg from './accelerate-svgrepo-com.svg'
 import ReactStars from 'react-stars'
+import { Oval } from 'react-loader-spinner'
 
 export const Home = () => {
   const[data , setData]=useState(1)
@@ -127,10 +128,17 @@ export const Home = () => {
             </div>
           </div>
           </>
-          : <></>
+          : data===6 ? 
+            <div className='flex items-center justify-center flex-col text-center h-4/5' >
+            <Oval/>
+            <p className='font-bold w-10/12 mt-5'>Finding learning path recommendations for you based on your responses</p>
+            </div>
+           :<></>
         }
-    
+    {
+      data===6 ? <></>:
         <button onClick={(()=>{setData(data+1)})} className='px-10 bg-black p-2 text-white rounded-xl mt-6'>Continue</button>
+    }
       </div>
     </div>
   )
