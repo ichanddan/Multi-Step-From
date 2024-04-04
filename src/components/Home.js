@@ -2,17 +2,30 @@ import React, { useState } from 'react'
 import isvg from './accelerate-svgrepo-com.svg'
 import ReactStars from 'react-stars'
 import { Oval } from 'react-loader-spinner'
+import { Progress } from '@nextui-org/progress'
+import { IoIosArrowBack } from "react-icons/io";
+
 
 export const Home = () => {
   const[data , setData]=useState(1)
+
+
+
   return (
     <div className='mx-auto'>
-      <div className=' flex justify-center items-center flex-col m-20'>
+      {
+        data ? <div className='flex items-center justify-center w-full mt-3'>
+        <button><IoIosArrowBack className='size-6' /></button>
+        <Progress size='sm' value={50} className=" w-4/5"/>
+      </div> :<></>
+      }
+      <div className=' flex justify-center items-center flex-col mt-5'>
+
         {
           data===1 ? <>
           <h1 className='font-bold text-3xl '>Which are you most intresting in?</h1>
           <p className='mt-2'>This will help us persnal your expricance</p>
-          <div className='flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-10'>
+          <div className='flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5'>
             <div className='p-2'>
               <img src={isvg} alt='ajdsdjs' width={30} height={30}></img>
             </div>
@@ -50,7 +63,7 @@ export const Home = () => {
           </div></> :
           data===2 ? <><h1 className='font-bold text-3xl '>Which describes you best</h1>
           <p className='mt-2'>choice just one. This will help us get your started(but won't limit your expireance)</p>
-          <div className='flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-10'>
+          <div className='flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5'>
             <div className='p-2'>
               <img src={isvg} alt='ajdsdjs' width={30} height={30}></img>
             </div>
@@ -82,7 +95,7 @@ export const Home = () => {
           </div>
           </> : data===3 ? <>
     
-          <div className='flex items-center justify-between gap-10 px-2 d mt-10'>
+          <div className='flex items-center justify-between gap-10 px-2 d mt-5'>
             <img src={isvg} alt='ajdsdjs' width={350} height={350}></img>
             <div className='w-2/4'>
             <h1 className='font-bold text-2xl'>You're in the right place</h1>
@@ -92,7 +105,7 @@ export const Home = () => {
           </> : data===4 ?<>
           <h1 className='font-bold text-3xl '>What is your math comfort level?</h1>
           <p className='mt-2'>Choose the highest level you feel confident in - you can always adjust later.</p>
-          <div className='flex items-center justify-center gap-10 rounded-md mt-10'>
+          <div className='flex items-center justify-center gap-10 rounded-md mt-5'>
             <div className='text-center border border-slate-600 py-5 px-14 rounded-md w-1/2 h-56'>
               <img src={isvg} alt='ajdsdjs' width={90} height={90}></img>
               <h1 className='mt-2'>Arethmatic</h1>
@@ -129,7 +142,7 @@ export const Home = () => {
           </div>
           </>
           : data===6 ? 
-            <div className='flex items-center justify-center flex-col text-center h-4/5' >
+            <div className='flex items-center justify-center flex-col text-center h-4/5 mt-20' >
             <Oval/>
             <p className='font-bold w-10/12 mt-5'>Finding learning path recommendations for you based on your responses</p>
             </div>
