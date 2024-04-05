@@ -6,7 +6,7 @@ import { Progress } from "@nextui-org/progress";
 import { IoIosArrowBack } from "react-icons/io";
 
 export const Home = () => {
-  const [data, setData] = useState(7);
+  const [data, setData] = useState(1);
   const back = () => {
     setData(data - 1);
   };
@@ -129,7 +129,7 @@ export const Home = () => {
             </button>
             <Progress size="sm" value={60} className=" w-4/5" />
           </div>
-          <div className=" flex justify-center items-center flex-col mt-5">
+          <div className=" flex justify-center items-center flex-col mt-5 mx-24">
             <div className="flex items-center justify-between gap-10 px-2 d mt-5">
               <img src={isvg} alt="ajdsdjs" width={350} height={350}></img>
               <div className="w-2/4">
