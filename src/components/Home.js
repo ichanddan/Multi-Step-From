@@ -6,6 +6,7 @@ import { Progress } from "@nextui-org/progress";
 import { IoIosArrowBack } from "react-icons/io";
 
 export const Home = () => {
+  document.title="Multi Step Form"
   const [data, setData] = useState(1);
   const back = () => {
     setData(data - 1);
