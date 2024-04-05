@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import isvg from "./accelerate-svgrepo-com.svg";
 import ReactStars from "react-stars";
 import { Oval } from "react-loader-spinner";
@@ -10,6 +10,14 @@ export const Home = () => {
   const back = () => {
     setData(data - 1);
   };
+  useEffect(() => {
+    if (data === 6) {
+      const timer = setTimeout(() => {
+        setData(7);
+      }, 3000); 
+      return () => clearTimeout(timer);
+    }
+  }, [data]);
 
   return (
     <div className="mx-auto">
