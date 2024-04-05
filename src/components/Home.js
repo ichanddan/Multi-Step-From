@@ -6,7 +6,7 @@ import { Progress } from "@nextui-org/progress";
 import { IoIosArrowBack } from "react-icons/io";
 
 export const Home = () => {
-  const [data, setData] = useState(1);
+  const [data, setData] = useState(7);
   const back =()=>{
     setData(data-1)
   }
@@ -188,11 +188,38 @@ export const Home = () => {
             <p className='font-bold w-10/12 mt-5'>Finding learning path recommendations for you based on your responses</p>
             </div>
 
-        </> :<></>
+        </> :data===7?<>
+        <div className=" flex justify-center items-center flex-col mt-56 ">
+          <div className="grid place-items-center">
+            <h1 className="font-bold text-3xl ">Learning paths based on your answers</h1>
+            <p className="mt-2">Choose one to get started. You can switch anytime.</p>
+            <div className="flex items-center justify-center gap-5">
+              <div className="w-1/4 border rounded-md relative mt-10">
+                <span className="absolute -top-3 left-20 w-2/4 bg-yellow-600 text-center rounded-2xl">MOST POPULAR</span>
+                <div className="flex items-center justify-center p-3">
+                  <p><span className="font-bold">Foundational Math</span> Build your foundational skills in algebra, geometry, and probability.</p>
+                  <div>
+                  <img src={isvg} alt='ajdsdjs' width={250} height={250}></img>
+                  </div>
+                </div>
+              </div>
+              <div className="w-1/4 border rounded-md mt-10">
+                <div className="flex items-center justify-center p-3">
+                  <p><span className="font-bold">Mathematical Thinking</span> Build your foundational skills in algebra, geometry, and probability.</p>
+                  <div>
+                  <img src={isvg} alt='ajdsdjs' width={250} height={250}></img>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        </>: <></>
       }
       <div className="flex items-center justify-center">
         {
-          data===6 ? <></> :<button onClick={() => {setData(data + 1);}}className="px-10 bg-black p-2 text-white rounded-xl mt-6">Continue</button>
+          data===6 ? <div></div> :data===7 ? <div></div> :<button onClick={() => {setData(data + 1);}}className="px-10 bg-black p-2 text-white rounded-xl mt-6">Continue</button>
         }
         
       </div>
