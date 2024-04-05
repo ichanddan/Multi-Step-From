@@ -200,7 +200,7 @@ export const Home = () => {
             </button>
             <Progress size="sm" value={100} className=" w-4/5" />
           </div>
-          <div className=" flex justify-center items-center flex-col mt-5">
+          <div className=" flex justify-center items-center flex-col px-24 mt-5">
             <div className="flex items-center justify-between gap-10 px-2 d mt-10">
               <img src={isvg} alt="ajdsdjs" width={350} height={350}></img>
               <div className="w-2/4">
@@ -225,7 +225,7 @@ export const Home = () => {
         </>
       ) : data === 6 ? (
         <>
-          <div className="flex items-center justify-center flex-col text-center h-4/5 mt-20">
+          <div className="flex items-center justify-center flex-col text-center h-4/5 mt-56">
             <Oval />
             <p className="font-bold w-10/12 mt-5">
               Finding learning path recommendations for you based on your
