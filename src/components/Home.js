@@ -92,37 +92,37 @@ export const Home = () => {
             </button>
             <Progress size="sm" value={40} className=" w-4/5" />
           </div>
-          <div className=" flex justify-center items-center flex-col mt-5">
+          <div className=" flex justify-center items-center flex-col mt-5" id="main">
             <h1 className="font-bold text-3xl ">Which describes you best</h1>
             <p className="mt-2">
               choice just one. This will help us get your started(but won't
               limit your expireance)
             </p>
-            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5">
+            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5" id="width">
               <div className="p-2">
                 <img src={isvg} alt="ajdsdjs" width={30} height={30}></img>
               </div>
               <h1>Learn Spacfic skills to advance career </h1>
             </div>
-            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5">
+            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5" id="width">
               <div className="p-2">
                 <img src={isvg} alt="ajdsdjs" width={30} height={30}></img>
               </div>
               <h1>Exploring new topic i'm intersted in</h1>
             </div>
-            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5">
+            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5" id="width">
               <div className="p-2">
                 <img src={isvg} alt="ajdsdjs" width={30} height={30}></img>
               </div>
               <h1>Refraceing my math functions</h1>
             </div>
-            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5">
+            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5" id="width">
               <div className="p-2">
                 <img src={isvg} alt="ajdsdjs" width={30} height={30}></img>
               </div>
               <h1>Exercising my brain to stay sharp</h1>
             </div>
-            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5">
+            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5" id="width">
               <div className="p-2">
                 <img src={isvg} alt="ajdsdjs" width={30} height={30}></img>
               </div>
