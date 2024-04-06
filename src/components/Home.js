@@ -34,12 +34,12 @@ export const Home = () => {
             )}
             <Progress size="sm" value={20} className="w-4/5 mt-3" />
           </div>
-          <div className=" flex justify-center items-center flex-col mt-5">
+          <div className=" flex justify-center items-center flex-col mt-5" id="main">
             <h1 className="font-bold text-3xl ">
               Which are you most intresting in?
             </h1>
             <p className="mt-2">This will help us persnal your expricance</p>
-            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5">
+            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5" id="width">
               <div className="p-2">
                 <img src={isvg} alt="ajdsdjs" width={30} height={30}></img>
               </div>
@@ -48,7 +48,7 @@ export const Home = () => {
                 <span className="opacity-60">or soon to be enrolled</span>{" "}
               </h1>
             </div>
-            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5">
+            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5" id="width">
               <div className="p-2">
                 <img src={isvg} alt="ajdsdjs" width={30} height={30}></img>
               </div>
@@ -56,7 +56,7 @@ export const Home = () => {
                 Profesnal <span className="opacity-60">pursing career</span>{" "}
               </h1>
             </div>
-            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5">
+            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5" id="width">
               <div className="p-2">
                 <img src={isvg} alt="ajdsdjs" width={30} height={30}></img>
               </div>
@@ -64,19 +64,19 @@ export const Home = () => {
                 Parent <span className="opacity-60">of school-age child</span>{" "}
               </h1>
             </div>
-            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5">
+            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5" id="width">
               <div className="p-2">
                 <img src={isvg} alt="ajdsdjs" width={30} height={30}></img>
               </div>
               <h1>Lifelong learner</h1>
             </div>
-            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5">
+            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5" id="width">
               <div className="p-2">
                 <img src={isvg} alt="ajdsdjs" width={30} height={30}></img>
               </div>
               <h1>Teacher</h1>
             </div>
-            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5">
+            <div className="flex items-center justify-left gap-10 px-2 w-2/4 border rounded-md mt-5" id="width">
               <div className="p-2">
                 <img src={isvg} alt="ajdsdjs" width={30} height={30}></img>
               </div>
