@@ -163,7 +163,7 @@ export const Home = () => {
             </button>
             <Progress size="sm" value={80} className=" w-4/5" />
           </div>
-          <div className=" flex justify-center items-center flex-col mt-5">
+          <div className=" flex justify-center items-center flex-col mt-5" id="main">
             <h1 className="font-bold text-3xl ">
               What is your math comfort level?
             </h1>
@@ -171,29 +171,29 @@ export const Home = () => {
               Choose the highest level you feel confident in - you can always
               adjust later.
             </p>
-            <div className="flex items-center justify-center gap-10 rounded-md mt-5">
-              <div className="text-center border border-slate-600 py-5 px-14 rounded-md w-1/2 h-56">
+            <div className="flex items-center justify-center gap-10 rounded-md mt-5" id="flex">
+              <div className="text-center border border-slate-600 py-5 px-14 rounded-md w-1/2 h-56" id="width">
                 <img src={isvg} alt="ajdsdjs" width={90} height={90}></img>
                 <h1 className="mt-2">Arethmatic</h1>
                 <p className="mt-2 tracking-widest text-slate-600">
                   introductory
                 </p>
               </div>
-              <div className="text-center border border-slate-600 py-5 px-14 rounded-md w-1/2 h-56">
+              <div className="text-center border border-slate-600 py-5 px-14 rounded-md w-1/2 h-56" id="width">
                 <img src={isvg} alt="ajdsdjs" width={90} height={90}></img>
                 <h1 className="mt-2">Basic Algebra</h1>
                 <p className="mt-2 tracking-widest text-slate-600">
                   Fundational
                 </p>
               </div>
-              <div className="text-center border border-slate-600 py-5 px-14 rounded-md w-1/2 h-56">
+              <div className="text-center border border-slate-600 py-5 px-14 rounded-md w-1/2 h-56" id="width">
                 <img src={isvg} alt="ajdsdjs" width={90} height={90}></img>
                 <h1 className="mt-2">Intermediate algebra</h1>
                 <p className="mt-2 tracking-widest text-slate-600">
                   intermediat
                 </p>
               </div>
-              <div className="text-center border border-slate-600 py-5 px-14 rounded-md w-1/2 h-56">
+              <div className="text-center border border-slate-600 py-5 px-14 rounded-md w-1/2 h-56" id="width">
                 <img src={isvg} alt="ajdsdjs" width={90} height={90}></img>
                 <h1 className="mt-2">Calculus</h1>
                 <p className="mt-2 tracking-widest text-slate-600">Advance</p>
