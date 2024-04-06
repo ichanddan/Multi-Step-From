@@ -13,6 +13,9 @@
     #width{
         width: 80%;
     }
+    #widthfull{
+        width: 100%;
+    }
     #flex{
         flex-direction: column;
     }

@@ -141,7 +141,7 @@ export const Home = () => {
           <div className=" flex justify-center items-center flex-col mt-5 mx-24">
             <div className="flex items-center justify-between gap-10 px-2 d mt-5" id="flex">
               <img src={isvg} alt="ajdsdjs" width={350} height={350}></img>
-              <div className="w-2/4" id="width">
+              <div className="w-2/4" id="widthfull">
                 <h1 className="font-bold text-2xl">
                   You're in the right place
                 </h1>
@@ -210,9 +210,9 @@ export const Home = () => {
             <Progress size="sm" value={100} className=" w-4/5" />
           </div>
           <div className=" flex justify-center items-center flex-col px-24 mt-5">
-            <div className="flex items-center justify-between gap-10 px-2 d mt-10">
+            <div className="flex items-center justify-between gap-10 px-2 d mt-10" id="flex">
               <img src={isvg} alt="ajdsdjs" width={350} height={350}></img>
-              <div className="w-2/4">
+              <div className="w-2/4" id="widthfull">
                 <h1 className="font-bold text-2xl">You're on your way!</h1>
                 <ReactStars
                   className="mt-5 font-bold ml-2"
@@ -245,15 +245,15 @@ export const Home = () => {
       ) : data === 7 ? (
         <>
           <div className=" flex justify-center items-center flex-col mt-56 ">
-            <div className="grid place-items-center">
+            <div className="grid place-items-center" id="main">
               <h1 className="font-bold text-3xl ">
                 Learning paths based on your answers
               </h1>
               <p className="mt-2">
                 Choose one to get started. You can switch anytime.
               </p>
-              <div className="flex items-center justify-center gap-5">
-                <div className="w-1/4 border rounded-md relative mt-10">
+              <div className="flex items-center justify-center gap-5" id="flex">
+                <div className="w-1/4 border rounded-md relative mt-10" id="width">
                   <span className="absolute -top-3 left-20 w-2/4 bg-yellow-500 text-center rounded-2xl">
                     MOST POPULAR
                   </span>
@@ -273,7 +273,7 @@ export const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div className="w-1/4 border rounded-md mt-10">
+                <div className="w-1/4 border rounded-md mt-10" id="width">
                   <div className="flex items-center justify-center p-3">
                     <p>
                       <span className="font-bold">Mathematical Thinking</span>{" "}
