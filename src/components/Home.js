@@ -139,9 +139,9 @@ export const Home = () => {
             <Progress size="sm" value={60} className=" w-4/5" />
           </div>
           <div className=" flex justify-center items-center flex-col mt-5 mx-24">
-            <div className="flex items-center justify-between gap-10 px-2 d mt-5">
+            <div className="flex items-center justify-between gap-10 px-2 d mt-5" id="flex">
               <img src={isvg} alt="ajdsdjs" width={350} height={350}></img>
-              <div className="w-2/4">
+              <div className="w-2/4" id="width">
                 <h1 className="font-bold text-2xl">
                   You're in the right place
                 </h1>
